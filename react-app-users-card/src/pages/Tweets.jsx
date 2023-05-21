@@ -8,7 +8,6 @@ const Tweets = () => {
   const location = useLocation();
   const backLinkLocationRef = useRef(location.state?.from ?? "/");
   const [responseData, setResponseData] = useState({});
-  console.log("responseData:", responseData);
   const { userId } = useParams();
 
   useEffect(() => {

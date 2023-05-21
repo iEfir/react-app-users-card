@@ -24,7 +24,6 @@ import background from "../components/images/picture.png";
 const Home = () => {
   const location = useLocation();
   const [responseData, setResponseData] = useState();
-  console.log("responseData:", responseData);
 
   const [btnVision, setBtnVision] = useState(false);
   const [pageNum, setPageNum] = useState(2);
