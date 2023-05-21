@@ -7,3 +7,9 @@ export const GoBackLink = styled(Link)`
   text-align: center;
   border: 2px solid darkgray;
 `;
+
+export const List = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+`;
