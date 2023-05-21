@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import UsersCard from "../components/UsersCard";
+import UsersCard from "../components/usersCard/UsersCard";
 
 const Home = () => {
   const [responseData, setResponseData] = useState();

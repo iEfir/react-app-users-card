@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import axios from "axios";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
+import { GoBackLink } from "../components/tweetsStyled/Tweets.styled";
 
 const Tweets = () => {
   const location = useLocation();
@@ -35,7 +36,12 @@ const Tweets = () => {
     };
   }, [userId]);
 
-  return <div>{responseData.user}</div>;
+  return (
+    <div>
+      <GoBackLink to={backLinkLocationRef.current}>Go back</GoBackLink>
+      {responseData.user}
+    </div>
+  );
 };
 
 export default Tweets;
